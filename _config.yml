@@ -1,0 +1,7 @@
+auto: true
+exclude:
+  - README.md
+markdown: kramdown
+permalink: /:title
+pygments: true
+safe: true

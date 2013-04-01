@@ -1,0 +1,22 @@
+@mixin breakpoint($point) {
+  @if $point == above640 {
+    @media (min-width: 640px) { @content; }
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.hide_text {
+  @include hide-text;
+  position:absolute;
+}
+
+.island {
+  padding:15px 20px;
+  background:$white;
+  color:$black;
+  border:1px solid shade($cloud, 10%);
+  border-radius:10px;
+}

@@ -1,0 +1,70 @@
+.app_header {
+  @extend .clearfix;
+  background:$black;
+  padding:8px 0;
+  margin-bottom:16px;
+
+  nav {
+    @extend .row;
+    margin-bottom:0;
+
+    > ul {
+      @extend .one_column;
+      text-align:center;
+      margin:0;
+      @include breakpoint(above640) { text-align:right; }
+    }
+
+    li {
+      display:inline-block;
+
+      @include breakpoint(above640) {
+        margin-left:5px;
+      }
+    }
+  }
+
+  h1 {
+    @extend .one_column;
+    text-align:center;
+    margin:0;
+    @include breakpoint(above640) { text-align:left; }
+
+    > a {
+      color:$white;
+      text-decoration:none;
+      font-size:2em;
+    }
+  }
+}
+
+.app_nav_item {
+  padding-top:2px;
+
+  a {
+    display:block;
+    color:$white;
+    text-decoration:none;
+    padding:8px 10px;
+    border-radius:5px;
+
+    &:hover, &:focus {
+      background:tint($black, 20%);
+    }
+  }
+}
+
+.on_settings .nav_settings {
+  background:tint($black, 20%);
+  color:shade($white, 20%);
+  cursor:default;
+  pointer-events:none;
+}
+
+.app_messages {
+  @extend .row, .two_column;
+}
+
+.app_wrapper {
+  @extend .row;
+}

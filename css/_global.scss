@@ -1,0 +1,98 @@
+html, body {
+  height:100%;
+}
+
+html {
+  overflow-y:scroll;
+}
+
+body {
+  font-size:20px;
+  font-family:'Source Sans Pro', $helvetica;
+  font-weight:400;
+  color:$black;
+}
+
+#{$all-text-inputs}, textarea {
+  @include box-sizing(border-box);
+  width:100%;
+  border:1px solid shade($cloud, 10%);
+  background:$white;
+  padding:5px;
+  margin:0;
+  border-radius:5px;
+
+  @include placeholder {
+    color:tint($black, 50%);
+  }
+
+  &:focus {
+    outline:tint($blue, 50%) auto 5px;
+  }
+
+  &.error:focus {
+    outline:$orange auto 5px;
+  }
+}
+
+h1 {
+  font-weight:200;
+}
+
+main {
+  @extend .row;
+}
+
+a {
+  color:tint($blue, 30%);
+  text-decoration:underline;
+
+  &:hover, &:focus, &.showing {
+    color:$orange;
+    text-decoration:none;
+  }
+}
+
+strong, b {
+  font-weight:700;
+}
+
+form {
+  div.input {
+    margin-bottom:16px;
+  }
+}
+
+label {
+  line-height:1.5;
+}
+
+label.required abbr {
+  display:none;
+}
+
+.global_container {
+  min-height:100%;
+  @include linear-gradient($cloud, tint($cloud, 50%));
+}
+
+.global_nav {
+  @extend .inner;
+
+  h1 {
+    font-size:3em;
+    padding:16px 0;
+  }
+}
+
+.js_validate {
+  label.error {
+    font-size:.75em;
+    line-height:1;
+    color:$orange;
+  }
+
+  input.error, textarea.error {
+    border-color:tint($orange, 50%);
+  }
+}

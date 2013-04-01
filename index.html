@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% for post in site.posts limit: 1 %}
+  <article class="blog_post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="date">{{ post.date | date_to_long_string }}</p>
+    {{ post.content }}
+  </article>
+{% endfor %}
+
+<aside>
+  <h3>Previous Articles</h3>
+  <ul>
+    {% for post in site.posts offset: 1 limit: 3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    <li class="full_archive"><a href="/archive">Full Archive</a></li>
+  </ul>
+</aside>
