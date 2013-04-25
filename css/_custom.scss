@@ -1,15 +1,15 @@
 h1 span {
-  font-size:14px;
-  font-weight:700;
-  position:relative;
-  text-transform:uppercase;
-  color:shade($white, 30%);
   display:inline-block;
-  padding:2px 3px;
-  color:$black;
-  background:$cloud;
+  background:tint($blue, 20%);
+  color:$white;
+  font-size:.6em;
+  font-weight:700;
+  padding:3px 5px;
   border-radius:2px;
+  cursor:default;
 }
+
+
 
 .blog_main {
   @extend .column, .inner;
@@ -40,7 +40,7 @@ h1 span {
   }
 }
 
-.on_archive .nav_item_archive {
+.on_archive .nav_link_archive {
   background:tint($black, 20%);
   color:shade($white, 20%);
   cursor:default;
@@ -49,6 +49,7 @@ h1 span {
 
 .blog_post {
   line-height:1.4;
+  margin-bottom:32px;
   
   h2 {
     font-size:2em;
@@ -101,8 +102,21 @@ h1 span {
     display:block;
     max-width:100%;
   }
+}
 
-  .date {
-    color:shade($cloud, 30%);
+.date {
+  color:shade($cloud, 30%);
+}
+
+.on_archive .blog_main {
+  li {
+    line-height:1.4;
+  }
+
+  a {
+    font-size:2em;
+    text-decoration:none;
+    display:block;
+    line-height:1;
   }
 }

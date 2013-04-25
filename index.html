@@ -10,6 +10,7 @@ layout: default
   </article>
 {% endfor %}
 
+{% if site.posts.length > 1 %}
 <aside>
   <h3>Previous Articles</h3>
   <ul>
@@ -19,3 +20,4 @@ layout: default
     <li class="full_archive"><a href="/archive">Full Archive</a></li>
   </ul>
 </aside>
+{% endif %}

@@ -535,24 +535,15 @@ label.required abbr {
   background: #5e5e5e;
 }
 
-.on_settings .nav_settings {
-  background: #5e5e5e;
-  color: #c8c9cb;
-  cursor: default;
-  pointer-events: none;
-}
-
 h1 span {
-  font-size: 14px;
-  font-weight: 700;
-  position: relative;
-  text-transform: uppercase;
-  color: #afb0b1;
   display: inline-block;
-  padding: 2px 3px;
-  color: #363636;
-  background: #d9ddf2;
+  background: #4d6c82;
+  color: #fbfcfe;
+  font-size: .6em;
+  font-weight: 700;
+  padding: 3px 5px;
   border-radius: 2px;
+  cursor: default;
 }
 
 .blog_main {
@@ -575,7 +566,7 @@ h1 span {
   list-style: none;
 }
 
-.on_archive .nav_item_archive {
+.on_archive .nav_link_archive {
   background: #5e5e5e;
   color: #c8c9cb;
   cursor: default;
@@ -584,6 +575,7 @@ h1 span {
 
 .blog_post {
   line-height: 1.4;
+  margin-bottom: 32px;
 }
 .blog_post h2 {
   font-size: 2em;
@@ -627,6 +619,17 @@ h1 span {
   display: block;
   max-width: 100%;
 }
-.blog_post .date {
+
+.date {
   color: #979aa9;
+}
+
+.on_archive .blog_main li {
+  line-height: 1.4;
+}
+.on_archive .blog_main a {
+  font-size: 2em;
+  text-decoration: none;
+  display: block;
+  line-height: 1;
 }

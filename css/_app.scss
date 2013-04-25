@@ -54,13 +54,6 @@
   }
 }
 
-.on_settings .nav_settings {
-  background:tint($black, 20%);
-  color:shade($white, 20%);
-  cursor:default;
-  pointer-events:none;
-}
-
 .app_messages {
   @extend .row, .two_column;
 }
