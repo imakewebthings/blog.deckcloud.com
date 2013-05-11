@@ -74,6 +74,25 @@ label.required abbr {
 .global_container {
   min-height:100%;
   @include linear-gradient($cloud, tint($cloud, 50%));
+  margin-bottom:-35px;
+}
+
+.global_footer {
+  height:19px;
+  padding-top:15px;
+  overflow:hidden;
+  font-size:0.6em;
+  color:shade($cloud, 30%);
+  border-top:1px solid $cloud;
+
+  li, p {
+    float:right;
+    margin-right:20px;
+  }
+
+  a {
+    text-decoration:none;
+  }
 }
 
 .global_nav {
@@ -83,6 +102,17 @@ label.required abbr {
     font-size:3em;
     padding:16px 0;
   }
+}
+
+.pro_badge {
+  display:inline-block;
+  background:$green;
+  color:$white;
+  font-size:.6em;
+  font-weight:700;
+  padding:3px 5px;
+  border-radius:2px;
+  cursor:default;
 }
 
 .js_validate {

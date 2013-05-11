@@ -12,4 +12,4 @@ Starting today, anyone can create a <a href="https://deckcloud.com/user/new">fre
 
 What exactly is DeckCloud? Today, it's nothing, but the goal is to create tools that improve the presentation experience for both speaker and audience. I believe the best first feature is a reasonable business model, a way to pay for this service. Hence this post.
 
-In reality, upgrading to a Pro account at this point is ridiculous. You get nothing for your money. A Pro upgrade would be no more than a recurring donation. I expect nobody to do it. But over time, I hope to build something worthy of the subscription. Look for more feature updates here in the future.
+In reality, upgrading to a Pro account at this point is ridiculous. You get nothing for your money. A Pro upgrade would be no more than a recurring donation. I expect nobody to do it. But over time, I hope to build something worthy of the subscription. Look for more feature updates here in the future, or sign up for email updates on the [DeckCloud homepage](https://deckcloud.com).

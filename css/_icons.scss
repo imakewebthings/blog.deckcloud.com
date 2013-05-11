@@ -1,0 +1,14 @@
+.icon {
+  &:before {
+    font-family:'FontAwesome';
+    padding-right:.4em;
+  }
+
+  &.twitter:before {
+    content:'\f099';
+  }
+
+  &.email:before {
+    content:'\f0e0';
+  }
+}
