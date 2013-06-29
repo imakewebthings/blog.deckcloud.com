@@ -596,6 +596,9 @@ h1 span {
 .blog_main {
   padding-bottom: 24px;
 }
+.blog_main > aside {
+  margin-bottom: 32px;
+}
 .blog_main > aside h3 {
   font-size: 1.2em;
   font-weight: 700;
@@ -665,6 +668,8 @@ h1 span {
 .blog_post p > img {
   display: block;
   max-width: 100%;
+  border: 10px solid #fbfcfe;
+  border-radius: 3px;
 }
 
 .date {
@@ -679,4 +684,11 @@ h1 span {
   text-decoration: none;
   display: block;
   line-height: 1;
+}
+
+.footnotes {
+  padding-top: 24px;
+  font-size: .7em;
+  color: #727272;
+  border-top: 1px solid #d9ddf2;
 }
