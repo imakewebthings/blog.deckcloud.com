@@ -668,8 +668,16 @@ h1 span {
 .blog_post p > img {
   display: block;
   max-width: 100%;
-  border: 10px solid #fbfcfe;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid #fbfcfe;
   border-radius: 3px;
+}
+@media (min-width: 640px) {
+  .blog_post p > img {
+    border-width: 10px;
+  }
 }
 
 .date {
