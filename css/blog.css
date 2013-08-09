@@ -562,13 +562,12 @@ label.required abbr {
 }
 .app_nav_item a {
   display: block;
-  color: #fbfcfe;
+  color: #bcbdbe;
   text-decoration: none;
   padding: 8px 10px;
-  border-radius: 5px;
 }
 .app_nav_item a:hover, .app_nav_item a:focus {
-  background: #5e5e5e;
+  color: #fbfcfe;
 }
 
 .icon:before {
@@ -591,6 +590,7 @@ h1 span {
   padding: 3px 5px;
   border-radius: 2px;
   cursor: default;
+  margin-right: -20px;
 }
 
 .blog_main {
@@ -617,8 +617,7 @@ h1 span {
 }
 
 .on_archive .nav_link_archive {
-  background: #5e5e5e;
-  color: #c8c9cb;
+  color: #fbfcfe;
   cursor: default;
   pointer-events: none;
 }
@@ -686,6 +685,7 @@ h1 span {
 
 .on_archive .blog_main li {
   line-height: 1.4;
+  margin-bottom: 16px;
 }
 .on_archive .blog_main a {
   font-size: 2em;

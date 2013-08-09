@@ -43,13 +43,12 @@
 
   a {
     display:block;
-    color:$white;
+    color:shade($white, 25%);
     text-decoration:none;
     padding:8px 10px;
-    border-radius:5px;
 
     &:hover, &:focus {
-      background:tint($black, 20%);
+      color:$white;
     }
   }
 }
