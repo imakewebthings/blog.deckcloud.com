@@ -1,4 +1,3 @@
-auto: true
 exclude:
   - README.md
 markdown: kramdown
